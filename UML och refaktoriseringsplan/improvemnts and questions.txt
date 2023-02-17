@@ -24,3 +24,11 @@ Steg för att bättre följa high cohesion, low coupling, DIP och composition ov
 4. Vehicle, Motorized och alla fordon ska implementa IVehicle och IMotorized.
 5. Alla fordon ska ha en (has a) Vehicle och Motorized refernes.
 6. Gör om mappar till Model, View, Controller
+
+Förbättra platform med composition over inheritence
+Gör classes för platform, en till Scania och en för CarCarrierScania, allt ska implementa IPlatform
+
+Gör en separat modul Application för att starta programmet
+Alla applikationerhar en ”main”-metod som går att exekvera. Denna hör inte till någon av MVC, utan ligger separat (”A”)
+
+CarController ska inte göra bilar och ha dom i sig. Gör en model class "World" där sånt hanteras.
